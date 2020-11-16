@@ -1,5 +1,8 @@
 {
   "name": "foo",
+  "scripts": {
+    "build": "sass index.scss build/index.css"
+  },
   "dependencies": {
     "esm": "^3.2.25",
     "sass": "^1.29.0"

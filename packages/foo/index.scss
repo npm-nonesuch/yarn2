@@ -1,0 +1,11 @@
+@use "sass:map";
+
+$FOO: ( color: blue );
+$BAR: map.merge($FOO, ( color: red ));
+
+.foo {
+  color: map.get($FOO, color);
+}
+.bar {
+  color: map.get($BAR, color);
+}
